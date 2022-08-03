@@ -21,7 +21,7 @@ export const todoreducers = (state = initial_state, action) => {
 
     case "UPDATE_DATA":
       const updateData = state.User_data.map((ele, id) =>
-        id == action.d ? action.payload : ele
+        id === action.d ? action.payload : ele
       );
       return {
         ...state,
